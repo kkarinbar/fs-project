@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest", "node", "@testing-library/jest-dom"],
+    "allowJs": true,
+    "composite": true
+  },
+  "include": [
+    "node_modules/styled-components/**/*.d.ts",
+    "src",
+    "../jest.config.js",
+    "../test-config",
+    "./src/custom.d.ts",
+    "./__mocks__",
+    "./src/**/*.test.ts",
+    "./src/**/*.test.tsx",
+    "./src/*.test.ts",
+    "./src/*.test.tsx",
+  ],
+  "exclude": ["webpack.config.js", "dist", "node_modules", "tmp"]
+}

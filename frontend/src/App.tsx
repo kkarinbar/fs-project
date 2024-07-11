@@ -5,12 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-    useEffect(() => {
-        fetch("http://localhost:4444/hello")
-            .then(response => response.json())
-            // 4. Setting *dogImage* to the image url that we received from the response above
-            .then(data => console.log(data))
-    },[])
+
   return (
     <>
       <div>
